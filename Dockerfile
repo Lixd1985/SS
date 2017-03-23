@@ -9,8 +9,8 @@ RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-* && \
     yum makecache && \
     yum -y update && \
     yum -y install epel-release && \
-    yum -y install python-pip && \ 
-    yum -y libnet1 libnet1-dev libpcap0.8 libpcap0.8-dev git && \
+    yum -y install python-pip && \
+    yum -y install libnet libpcap libnet-devel libpcap-devel gcc git && \
     yum clean all && \
     pip install shadowsocks
 
