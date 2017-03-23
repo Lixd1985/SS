@@ -1,4 +1,4 @@
-# ssr-with-net-speeder
+# ss-with-net-speeder
 
 FROM centos:latest
 
