@@ -25,5 +25,4 @@ RUN chmod +x /usr/local/bin/net_speeder
 
     
 # Configure container to run as an executable 
-ENTRYPOINT ["/usr/local/bin/entrypoint.sh","-p 1111 -k 850812 -m aes-256-cfb"]
-CMD ["-p 1111 -k 850812 -m aes-256-cfb"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
