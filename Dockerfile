@@ -1,9 +1,6 @@
 # ss-with-net-speeder
-
 FROM centos:latest
-
 MAINTAINER Lixd1985
-
 RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-* && \
     yum clean all && \
     yum makecache && \
@@ -23,6 +20,5 @@ COPY entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/net_speeder
 
-    
 # Configure container to run as an executable 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
