@@ -1,7 +1,7 @@
 # shadowsocks-net-speeder
 
 FROM ubuntu:14.04.3
-MAINTAINER lowid <lowid@outlook.com>
+MAINTAINER lixd1985
 RUN apt-get update && \
     apt-get install -y python-pip libnet1 libnet1-dev libpcap0.8 libpcap0.8-dev git
 
